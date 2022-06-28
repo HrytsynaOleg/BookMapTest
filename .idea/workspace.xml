@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="58fe83ed-01c0-461a-8af3-a7628344873a" name="Changes" comment="first commit">
+    <list default="true" id="58fe83ed-01c0-461a-8af3-a7628344873a" name="Changes" comment="add main method and input/output files">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -80,7 +80,14 @@
       <option name="project" value="LOCAL" />
       <updated>1656399242089</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="add main method and input/output files">
+      <created>1656400088550</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1656400088550</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -96,7 +103,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="first commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="first commit" />
+    <MESSAGE value="add main method and input/output files" />
+    <option name="LAST_COMMIT_MESSAGE" value="add main method and input/output files" />
   </component>
   <component name="XDebuggerManager">
     <watches-manager>
