@@ -1,6 +1,7 @@
 package com.Bookmap.App;
-import com.Bookmap.App.enums.RecordType;
-import com.Bookmap.App.records.RecordsList;
+import com.Bookmap.App.configuration.AppSettings;
+import com.Bookmap.App.models.IRecordModel;
+import com.Bookmap.App.records.RecordsModelList;
 import org.apache.commons.csv.CSVFormat;
 import org.apache.commons.csv.CSVParser;
 import org.apache.commons.csv.CSVRecord;
@@ -9,42 +10,36 @@ import java.io.FileReader;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.util.List;
+import java.util.TreeMap;
 
 public class BookmapApp {
 
+    static TreeMap<Integer, IRecordModel> recordsList = new TreeMap<>();
+
     public static void main(String[] args) throws IOException {
 
-        FileWriter csvWriter = new FileWriter("output.txt");
+        FileWriter csvWriter = new FileWriter(AppSettings.OUTPUT_FILEPATH);
 
-        BufferedReader br = new BufferedReader(new FileReader("input.txt"));
+        BufferedReader br = new BufferedReader(new FileReader(AppSettings.INPUT_FILEPATH));
 
         CSVParser csvParser = new CSVParser(br, CSVFormat.DEFAULT
                 .withNullString("")
                 .withDelimiter(','));
         List<CSVRecord> csvRecords = csvParser.getRecords();
 
-        RecordsList updateRecords = new RecordsList();
-
         for (CSVRecord record: csvRecords) {
-            switch (RecordType.valueOfName(record.get(0))) {
-                case UPDATE : {
-                    updateRecords.updateRecord(Integer.parseInt(record.get(1)),Integer.parseInt(record.get(2)),record.get(3).toUpperCase());
-                    break;
-                }
-                case ORDER: {
-                    updateRecords.updateRecordByOrder(Integer.parseInt(record.get(2)),record.get(1).toUpperCase());
-                    break;
-                }
 
-                case QUERY:{
-                    String result = updateRecords.runQuery(record);
-                    csvWriter.append(result);
+            IRecordModel recordModel = RecordsModelList.getRecordModel(record);
+
+            if (recordModel!=null) {
+                String response = recordModel.performOperation(recordsList,record);
+                if (!response.equals("")) {
+                    csvWriter.append(response);
                     csvWriter.append("\n");
-                    System.out.println(updateRecords.runQuery(record));
+                    }
                 }
-
             }
-            }
+        System.out.println();
         csvWriter.flush();
         csvWriter.close();
 
