@@ -16,6 +16,8 @@ public class RecordsModelList {
         recordModelList.add(new QueryBestBidModel());
         recordModelList.add(new QueryBestAskModel());
         recordModelList.add(new QuerySizeModel());
+        recordModelList.add(new OrderBuyModel());
+        recordModelList.add(new OrderSellModel());
     }
 
     public static IRecordModel getRecordModel(CSVRecord record) {

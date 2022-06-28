@@ -5,23 +5,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="58fe83ed-01c0-461a-8af3-a7628344873a" name="Changes" comment="add main method and input/output files">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/Bookmap/App/configuration/AppSettings.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/Bookmap/App/models/IRecordModel.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/Bookmap/App/models/QueryBestAskModel.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/Bookmap/App/models/QueryBestBidModel.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/Bookmap/App/models/QuerySizeModel.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/Bookmap/App/models/UpdateAskModel.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/Bookmap/App/models/UpdateBidModel.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/Bookmap/App/records/RecordsModelList.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/Bookmap/App/models/OrderBuyModel.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/Bookmap/App/models/OrderSellModel.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/input.txt" beforeDir="false" afterPath="$PROJECT_DIR$/input.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/output.txt" beforeDir="false" afterPath="$PROJECT_DIR$/output.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/Bookmap/App/BookmapApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/Bookmap/App/BookmapApp.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/Bookmap/App/enums/OrderType.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/Bookmap/App/enums/QueryType.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/Bookmap/App/enums/RecordType.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/Bookmap/App/enums/RecordType.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/Bookmap/App/enums/UpdateType.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/Bookmap/App/records/RecordsList.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/Bookmap/App/models/QueryBestAskModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/Bookmap/App/models/QueryBestAskModel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/Bookmap/App/models/QueryBestBidModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/Bookmap/App/models/QueryBestBidModel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/Bookmap/App/records/RecordsModelList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/Bookmap/App/records/RecordsModelList.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -40,7 +32,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="newRecordsStructure" />
+        <entry key="$PROJECT_DIR$" value="master" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />

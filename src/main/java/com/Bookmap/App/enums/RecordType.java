@@ -2,7 +2,7 @@ package com.Bookmap.App.enums;
 
 public enum RecordType {
     UPDATEBID("u","bid"),
-    UPDATEASK("u","bid"),
+    UPDATEASK("u","ask"),
     QUERYBESTBID("q","best_bid"),
     QUERYBESTASK("q","best_ask"),
     QUERYSIZE("q","size"),
