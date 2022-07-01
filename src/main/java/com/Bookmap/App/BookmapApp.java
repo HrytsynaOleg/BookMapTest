@@ -21,7 +21,17 @@ public class BookmapApp {
 
         FileWriter csvWriter = new FileWriter(AppSettings.OUTPUT_FILEPATH);
 
-        BufferedReader br = new BufferedReader(new FileReader(AppSettings.INPUT_FILEPATH));
+        BufferedReader br ;
+
+        try {
+
+            br = new BufferedReader(new FileReader(AppSettings.INPUT_FILEPATH));
+        }
+        catch (IOException exception) {
+            br = null;
+            System.out.println("file input.txt not found");
+            System.exit(0);
+        }
 
         CSVParser csvParser = new CSVParser(br, CSVFormat.DEFAULT
                 .withNullString("")
@@ -34,8 +44,9 @@ public class BookmapApp {
 
             if (recordModel!=null) {
                 String response = recordModel.performOperation(recordsList);
-                System.out.println(response);// remove
+
                 if (!response.equals("")) {
+                    System.out.println(response);
                     csvWriter.append(response);
                     csvWriter.append("\n");
                     }

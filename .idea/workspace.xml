@@ -4,30 +4,9 @@
     <option name="autoReloadType" value="ALL" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="58fe83ed-01c0-461a-8af3-a7628344873a" name="Changes" comment="version 3 all models implemented">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/Bookmap/App/builder/IRecordModelBuilder.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/Bookmap/App/builder/RecordModelBuilderFactory.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/Bookmap/App/builder/impl/OrderBuyModelBuilder.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/Bookmap/App/builder/impl/OrderSellModelBuilder.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/Bookmap/App/builder/impl/QueryBestAskModelBuilder.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/Bookmap/App/builder/impl/QueryBestBidModelBuilder.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/Bookmap/App/builder/impl/QuerySizeModelBuilder.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/Bookmap/App/builder/impl/UpdateAskModelBuilder.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/Bookmap/App/builder/impl/UpdateBidModelBuilder.java" afterDir="false" />
+    <list default="true" id="58fe83ed-01c0-461a-8af3-a7628344873a" name="Changes" comment="version 3 create model builder">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/input.txt" beforeDir="false" afterPath="$PROJECT_DIR$/input.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/output.txt" beforeDir="false" afterPath="$PROJECT_DIR$/output.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/Bookmap/App/BookmapApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/Bookmap/App/BookmapApp.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/Bookmap/App/enums/RecordType.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/Bookmap/App/enums/RecordType.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/Bookmap/App/models/IRecordModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/Bookmap/App/models/IRecordModel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/Bookmap/App/models/OrderBuyModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/Bookmap/App/models/impl/OrderBuyModel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/Bookmap/App/models/OrderSellModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/Bookmap/App/models/impl/OrderSellModel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/Bookmap/App/models/QueryBestAskModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/Bookmap/App/models/impl/QueryBestAskModel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/Bookmap/App/models/QueryBestBidModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/Bookmap/App/models/impl/QueryBestBidModel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/Bookmap/App/models/QuerySizeModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/Bookmap/App/models/impl/QuerySizeModel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/Bookmap/App/models/UpdateAskModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/Bookmap/App/models/impl/UpdateAskModel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/Bookmap/App/models/UpdateBidModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/Bookmap/App/models/impl/UpdateBidModel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/Bookmap/App/records/RecordsModelList.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -134,7 +113,14 @@
       <option name="project" value="LOCAL" />
       <updated>1656627952270</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="version 3 create model builder">
+      <created>1656634867270</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1656634867277</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -154,7 +140,8 @@
     <MESSAGE value="version 2" />
     <MESSAGE value="version 3 all models implemented" />
     <MESSAGE value="version 3 fat jar build" />
-    <option name="LAST_COMMIT_MESSAGE" value="version 3 fat jar build" />
+    <MESSAGE value="version 3 create model builder" />
+    <option name="LAST_COMMIT_MESSAGE" value="version 3 create model builder" />
   </component>
   <component name="XDebuggerManager">
     <watches-manager>
