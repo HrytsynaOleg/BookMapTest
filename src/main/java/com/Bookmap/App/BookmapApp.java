@@ -1,7 +1,8 @@
 package com.Bookmap.App;
+import com.Bookmap.App.builder.RecordModelBuilderFactory;
 import com.Bookmap.App.configuration.AppSettings;
+import com.Bookmap.App.enums.RecordType;
 import com.Bookmap.App.models.IRecordModel;
-import com.Bookmap.App.records.RecordsModelList;
 import org.apache.commons.csv.CSVFormat;
 import org.apache.commons.csv.CSVParser;
 import org.apache.commons.csv.CSVRecord;
@@ -29,10 +30,11 @@ public class BookmapApp {
 
         for (CSVRecord record: csvRecords) {
 
-            IRecordModel recordModel = RecordsModelList.getRecordModel(record);
+            IRecordModel recordModel = RecordModelBuilderFactory.gerBuilder(RecordType.valueOfRecord(record)).buildModel(record);
 
             if (recordModel!=null) {
-                String response = recordModel.performOperation(recordsList,record);
+                String response = recordModel.performOperation(recordsList);
+                System.out.println(response);// remove
                 if (!response.equals("")) {
                     csvWriter.append(response);
                     csvWriter.append("\n");
@@ -42,7 +44,6 @@ public class BookmapApp {
         System.out.println();
         csvWriter.flush();
         csvWriter.close();
-
         }
 
     }

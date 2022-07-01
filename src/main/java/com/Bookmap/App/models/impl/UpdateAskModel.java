@@ -1,11 +1,12 @@
-package com.Bookmap.App.models;
+package com.Bookmap.App.models.impl;
 
 import com.Bookmap.App.enums.RecordType;
+import com.Bookmap.App.models.IRecordModel;
 import org.apache.commons.csv.CSVRecord;
 
 import java.util.TreeMap;
 
-public class UpdateAskModel implements IRecordModel{
+public class UpdateAskModel implements IRecordModel {
 
     private int price;
     private int size;
@@ -22,9 +23,9 @@ public class UpdateAskModel implements IRecordModel{
     }
 
     @Override
-    public String performOperation(TreeMap<Integer, IRecordModel> recordsList, CSVRecord record) {
-        UpdateAskModel model = new UpdateAskModel(Integer.parseInt(record.get(1)), Integer.parseInt(record.get(2)));
-        recordsList.put(Integer.parseInt(record.get(1)),model);
+    public String performOperation(TreeMap<Integer, IRecordModel> recordsList) {
+//        UpdateAskModel model = new UpdateAskModel(Integer.parseInt(record.get(1)), Integer.parseInt(record.get(2)));
+        recordsList.put(price,this);
     return "";
     }
 

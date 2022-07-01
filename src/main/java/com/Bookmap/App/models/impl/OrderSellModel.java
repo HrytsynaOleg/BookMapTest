@@ -1,18 +1,23 @@
-package com.Bookmap.App.models;
+package com.Bookmap.App.models.impl;
 
 import com.Bookmap.App.enums.RecordType;
-import org.apache.commons.csv.CSVRecord;
+import com.Bookmap.App.models.IRecordModel;
 
 import java.util.Map;
 import java.util.TreeMap;
 import java.util.stream.Collectors;
 
-public class OrderSellModel implements IRecordModel{
+public class OrderSellModel implements IRecordModel {
+
+    int size;
+
+    public OrderSellModel(int size) {
+        this.size = size;
+    }
 
     @Override
-    public String performOperation(TreeMap<Integer, IRecordModel> recordsList, CSVRecord record) {
+    public String performOperation(TreeMap<Integer, IRecordModel> recordsList) {
 
-        int size = Integer.parseInt(record.get(2));
 
         Map.Entry entry = recordsList.entrySet().stream()
                 .filter(e->e.getValue().getRecordType().equals(RecordType.UPDATEBID))

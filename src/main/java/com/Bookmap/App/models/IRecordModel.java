@@ -7,6 +7,6 @@ import java.util.TreeMap;
 
 public interface IRecordModel {
 
-    String performOperation(TreeMap<Integer, IRecordModel> recordsList, CSVRecord record);
+    String performOperation(TreeMap<Integer, IRecordModel> recordsList);
     RecordType getRecordType();
 }

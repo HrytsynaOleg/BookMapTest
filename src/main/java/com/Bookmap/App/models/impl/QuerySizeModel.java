@@ -1,17 +1,27 @@
-package com.Bookmap.App.models;
+package com.Bookmap.App.models.impl;
 
 import com.Bookmap.App.enums.RecordType;
-import org.apache.commons.csv.CSVRecord;
+import com.Bookmap.App.models.IRecordModel;
+
 import java.util.TreeMap;
 
 
-public class QuerySizeModel implements IRecordModel{
+public class QuerySizeModel implements IRecordModel {
+
+    private int price;
+
+    public QuerySizeModel() {
+    }
+
+    public QuerySizeModel(int price) {
+        this.price = price;
+    }
 
     @Override
-    public String performOperation(TreeMap<Integer, IRecordModel> recordsList, CSVRecord record) {
+    public String performOperation(TreeMap<Integer, IRecordModel> recordsList) {
 
-        if (recordsList.containsKey(Integer.valueOf(record.get(2)))) {
-            IRecordModel entry = recordsList.get(Integer.valueOf(record.get(2)));
+        if (recordsList.containsKey(Integer.valueOf(price))) {
+            IRecordModel entry = recordsList.get(Integer.valueOf(price));
             switch (entry.getRecordType()) {
                 case UPDATEBID: {
                     return String.valueOf(((UpdateBidModel) entry).getSize());
@@ -28,7 +38,6 @@ public class QuerySizeModel implements IRecordModel{
         else {
             return "0";
         }
-
     }
 
     @Override
